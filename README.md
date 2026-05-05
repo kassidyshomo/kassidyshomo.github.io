@@ -1,2 +1,2 @@
 # kassidyshomo.github.io
-Capstone ePortfolio demonstrating software design, algorithm optimization, and database security enhancements.
+ePortfolio for CS 499 Capstone including three enhanced artifacts in software engineering, algorithms, and databases.
