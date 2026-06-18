@@ -3,118 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <title>CS 499 ePortfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #efefe9;
+            color: #223030;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #e8d9cd;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #523d35;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #523d35;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #223030;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #523d35;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #e8d9cd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bba58f;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #ffffffaa;
+            border-radius: 10px;
+            border-left: 6px solid #523d35;
+        }
+
+        h2, h3 {
+            color: #523d35;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #523d35;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #e8d9cd;
+            border-top: 4px solid #523d35;
+            margin-top: 50px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>CS 499 ePortfolio</h1>
-        <p>
-            Software Engineering and Design • Algorithms and Data Structures • Databases
-        </p>
-    </header>
+<header>
+    <h1>CS 499 ePortfolio</h1>
+    <p>Software Engineering • Algorithms & Data Structures • Databases</p>
+</header>
 
-    <hr>
+<nav>
+    <ul>
+        <li><a href="#self-assessment">Self-Assessment</a></li>
+        <li><a href="#code-review">Code Review</a></li>
+        <li><a href="#artifacts">Artifacts</a></li>
+    </ul>
+</nav>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#self-assessment">Self-Assessment</a></li>
-            <li><a href="#code-review">Code Review</a></li>
-            <li><a href="#artifacts">Artifacts</a></li>
-        </ul>
-    </nav>
+<section id="self-assessment">
+    <h2>Professional Self-Assessment</h2>
 
-    <hr>
+    <p>
+        This ePortfolio represents my overall growth throughout the Computer Science program, with a focus on how I approach real software systems rather than isolated assignments.
+        Across the three artifacts, I demonstrate my ability to analyze existing code, identify security or design weaknesses, and implement structured improvements that make the systems more reliable and secure.
+    </p>
 
-    <!-- Self Assessment -->
-    <section id="self-assessment">
-        <h2>Professional Self-Assessment</h2>
-        <p>[Insert final self-assessment here]</p>
-    </section>
+    <p>
+        The work reflects a shift in my thinking from simply making programs function to intentionally designing software that is safer, more maintainable, and better aligned with real-world development practices.
+    </p>
+</section>
 
-    <hr>
+<section id="code-review">
+    <h2>Code Review</h2>
 
-    <!-- Code Review -->
-    <section id="code-review">
-        <h2>Code Review</h2>
-        <p>Video walkthrough of original artifacts, analysis, and planned enhancements.</p>
-        <p>Link: [link]</p>
-    </section>
+    <p>
+        This video walkthrough provides a detailed breakdown of each original artifact, including how each system behaves before modification,
+        what issues or vulnerabilities were identified, and how those issues were addressed through the enhancement process.
+    </p>
 
-    <hr>
+    <p>
+        The review also connects technical changes to broader concepts such as secure coding, algorithm efficiency, and database safety practices used in professional environments.
+    </p>
 
-    <!-- Artifacts -->
-    <section id="artifacts">
+    <p>
+        Video Link: [insert link here]
+    </p>
+</section>
 
-        <h2>Artifacts</h2>
+<section id="artifacts">
 
-        <p>
-            All artifacts were originally developed in CS 405: Secure Coding and later enhanced in CS 499: Computer Science Capstone.
-            Each project demonstrates improvements in security, algorithm design, or system reliability.
-        </p>
+    <h2>Artifacts</h2>
 
-        <!-- Software Engineering -->
-        <section>
-            <h3>Software Engineering and Design</h3>
+    <p>
+        The artifacts below were originally developed in CS 405: Secure Coding and later enhanced in CS 499.
+        Each one focuses on a different core area of computer science and demonstrates applied improvement in security, structure, or efficiency.
+    </p>
 
-            <p>
-                Buffer Overflow Prevention Program originally demonstrated how unsafe input could overwrite memory in a fixed buffer.
-                The enhanced version adds input validation, safe memory handling, and controlled error tracking to prevent overflow.
-            </p>
+    <!-- SOFTWARE ENGINEERING -->
+    <h3>Software Engineering and Design</h3>
 
-            <ul>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/BufferOverflow%20-%20Original.zip">Original Project (Zip)</a> — vulnerable buffer overflow implementation from CS 405</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/BufferOverflow%20-%20Enhanced.zip">Enhanced Project (Zip)</a> — secure version with validation and safe copying</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20One_Software%20Design%20%26%20Engineering.pdf">Enhancement Narrative</a> — explanation of improvements and security fixes</li>
-            </ul>
-        </section>
+    <p>
+        The original Buffer Overflow program demonstrates a critical vulnerability where user input larger than a fixed buffer size can overwrite adjacent memory.
+        This type of issue is a well-known security risk in low-level programming and can lead to unpredictable behavior or system compromise.
+    </p>
 
-        <br>
+    <p>
+        The enhanced version resolves this issue by introducing structured input validation before memory allocation.
+        Instead of allowing unsafe data into the buffer and reacting to failure afterward, the program now prevents invalid input from ever being written into memory.
+        This improves both security and reliability while also making the program structure easier to maintain and understand.
+    </p>
 
-        <!-- Algorithms -->
-        <section>
-            <h3>Algorithms and Data Structures</h3>
+    <ul>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/BufferOverflow%20-%20Original.zip">Original Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/BufferOverflow%20-%20Enhanced.zip">Enhanced Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20One_Software%20Design%20%26%20Engineering.pdf">Narrative</a></li>
+    </ul>
 
-            <p>
-                Numeric Overflow and Underflow program demonstrates how repeated arithmetic operations can exceed data type limits.
-                The enhanced version replaces iterative loops with direct computation for O(1) performance while preserving safety checks.
-            </p>
+    <!-- ALGORITHMS -->
+    <h3>Algorithms and Data Structures</h3>
 
-            <ul>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/NumericOverflows%20-%20Original.zip">Original Project (Zip)</a> — loop-based overflow simulation from CS 405</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/NumericOverflows%20-%20Enhanced.zip">Enhanced Project (Zip)</a> — optimized constant-time arithmetic version</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure.pdf">Enhancement Narrative</a> — algorithm design and efficiency explanation</li>
-            </ul>
-        </section>
+    <p>
+        The original Numeric Overflow program uses iterative loops to simulate arithmetic operations that can exceed the limits of a given data type.
+        While this effectively demonstrates how overflow and underflow occur, it is inefficient because it relies on repeated computation rather than direct calculation.
+    </p>
 
-        <br>
+    <p>
+        The enhanced version improves both performance and structure by replacing iterative logic with direct mathematical computation.
+        It also introduces pre-check validation to ensure that values remain within safe numeric boundaries before execution.
+        This reduces time complexity while preserving correctness and improving overall efficiency.
+    </p>
 
-        <!-- Databases -->
-        <section>
-            <h3>Databases</h3>
+    <ul>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/NumericOverflows%20-%20Original.zip">Original Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/NumericOverflows%20-%20Enhanced.zip">Enhanced Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure.pdf">Narrative</a></li>
+    </ul>
 
-            <p>
-                SQL Injection program demonstrates how unsafe query construction can expose database vulnerabilities.
-                The enhanced version uses parameterized queries to eliminate injection risk.
-            </p>
+    <!-- DATABASES -->
+    <h3>Databases</h3>
 
-            <ul>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/SQLInjection%20-%20Original.zip">Original Project (Zip)</a> — insecure query construction example</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/SQLInjection%20-%20Enhanced.zip">Enhanced Project (Zip)</a> — secure parameterized query version</li>
-                <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20Three_%20Databases.pdf">Enhancement Narrative</a> — database security explanation</li>
-            </ul>
-        </section>
+    <p>
+        The SQL Injection artifact demonstrates how unsafe string concatenation can allow malicious input to alter the structure of a database query.
+        This is a critical vulnerability in database-driven applications because it can expose or modify sensitive data.
+    </p>
 
-    </section>
+    <p>
+        The enhanced version eliminates this risk by using parameterized queries, ensuring that user input is always treated as data rather than executable SQL.
+        This change significantly improves security by preventing query manipulation and aligns the program with standard database security practices used in industry systems.
+    </p>
 
-    <hr>
+    <ul>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/SQLInjection%20-%20Original.zip">Original Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/SQLInjection%20-%20Enhanced.zip">Enhanced Project</a></li>
+        <li><a href="https://github.com/kassidyshomo/kassidyshomo.github.io/raw/main/Enhancement%20Three_%20Databases.pdf">Narrative</a></li>
+    </ul>
 
-    <!-- Footer -->
-    <footer>
-        <p>CS 499 Capstone ePortfolio</p>
-    </footer>
+</section>
+
+<footer>
+    <p>CS 499 Capstone ePortfolio</p>
+</footer>
 
 </body>
 </html>
