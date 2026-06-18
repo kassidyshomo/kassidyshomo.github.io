@@ -36,6 +36,9 @@
             background-color: #523d35;
             text-align: center;
             padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -50,13 +53,17 @@
         }
 
         nav a {
-            color: #bba58f;   /* lighter accent as requested */
+            color: #efefe9;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.2s ease;
         }
 
         nav a:hover {
-            color: #e8d9cd;
+            color: #523d35;
+            background-color: #e8d9cd;
+            padding: 4px 8px;
+            border-radius: 4px;
         }
 
         section {
@@ -65,19 +72,19 @@
             padding: 25px;
             background-color: #ffffffaa;
             border-radius: 10px;
-            border-left: 6px solid #523d35;
+            border-left: 10px solid #523d35;
         }
 
         /* MAIN HEADINGS */
         h2 {
             color: #223030;
-            border-bottom: 2px solid #959d90; /* GREEN introduced */
+            border-bottom: 2px solid #959d90;
             padding-bottom: 5px;
         }
 
         /* SUB HEADINGS */
         h3 {
-            color: #959d90; /* GREEN accent now clearly used */
+            color: #959d90;
             margin-top: 25px;
         }
 
@@ -92,13 +99,18 @@
         a {
             color: #523d35;
             font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        section a:hover {
+            color: #959d90;
         }
 
         footer {
             text-align: center;
             padding: 25px;
             background-color: #e8d9cd;
-            border-top: 4px solid #959d90; /* GREEN accent line */
+            border-top: 4px solid #959d90;
             margin-top: 50px;
             color: #523d35;
             font-weight: bold;
